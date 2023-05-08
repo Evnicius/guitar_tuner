@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "cwd": "${workspaceFolder}",
+            "executable": "./build/Guitar_tuner_I2S.elf",
+            "name": "Debug with OpenOcd",
+            "request": "launch",
+            "type": "cortex-debug",
+            "device": "STM32L476RG",
+            "runToEntryPoint": "main",
+            "showDevDebugOutput": "none",
+            "servertype": "openocd",
+            "configFiles": [
+                "interface/stlink.cfg",
+                "target/stm32l4x.cfg"
+            ],
+            "svdFile": "./STM32L4x6.svd"
+        }
+
+    
+    ]
+}
